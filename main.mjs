@@ -1,4 +1,4 @@
-import { monthNames, getMonthMetadata } from "./calendar-logic.js";
+import { monthNames, getMonthMetadata } from "./calendar-logic.mjs";
 
 const grid = document.getElementById("calendar-grid");
 const template = document.getElementById("day-template");
