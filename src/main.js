@@ -8,8 +8,12 @@ function renderCalendar(year, month) {
   // 1. Clear UI
   grid.innerHTML = "";
 
-  // 2. Use Logic Module to get data
-  const { firstDayIndex, numberOfDays } = getMonthMetadata(year, month);
+  // 2a. Get the data "box"
+  const data = getMonthMetadata(year, month);
+
+  // 2b. Take the pieces out of the box one by one
+  const firstDayIndex = data.firstDayIndex;
+  const numberOfDays = data.numberOfDays;
 
   // 3. Update UI Title
   displayTitle.textContent = `${monthNames[month]} ${year}`;
