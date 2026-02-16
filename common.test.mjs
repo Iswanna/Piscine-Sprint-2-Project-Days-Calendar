@@ -6,16 +6,16 @@ import test from "node:test";
 
 test("Calculate Ada Lovelace Day 2024 (second Tuesday of October)", () => {
     const date = calculateDayDate(2024, "October", "Tuesday", "second");
-    assert.equal(date.getFullYear(), 2024);
-    assert.equal(date.getMonth(), 9); // October is month 9 (0-indexed)
-    assert.equal(date.getDate(), 8);
+    assert.equal(date.getUTCFullYear(), 2024);
+    assert.equal(date.getUTCMonth(), 9); // October is month 9 (0-indexed)
+    assert.equal(date.getUTCDate(), 8);
 });
 
 test("Calculate Ada Lovelace Day 2020 (second Tuesday of October)", () => {
     const date = calculateDayDate(2020, "October", "Tuesday", "second");
-    assert.equal(date.getFullYear(), 2020);
-    assert.equal(date.getMonth(), 9);
-    assert.equal(date.getDate(), 13);
+    assert.equal(date.getUTCFullYear(), 2020);
+    assert.equal(date.getUTCMonth(), 9);
+    assert.equal(date.getUTCDate(), 13);
 });
 
 

@@ -16,11 +16,11 @@ export function calculateDayDate(year, monthName, dayName, occurence) {
     const targetDayNumber = getDayNumber(dayName);
     
     // Start at the first day of the month
-    let date = new Date(year, monthNumber, 1);
+    let date = new Date(Date.UTC(year, monthNumber, 1));
     
     // Find the first occurrence of the target day in the month
-    while (date.getDay() !== targetDayNumber) {
-        date.setDate(date.getDate() + 1);
+    while (date.getUTCDay() !== targetDayNumber) {
+        date.setUTCDate(date.getUTCDate() + 1);
     }
     
     // Now we have the first occurrence of the target day
@@ -28,18 +28,18 @@ export function calculateDayDate(year, monthName, dayName, occurence) {
     if (occurence === "first") {
         // Already at first occurrence
     } else if (occurence === "second") {
-        date.setDate(date.getDate() + 7);
+        date.setUTCDate(date.getUTCDate() + 7);
     } else if (occurence === "third") {
-        date.setDate(date.getDate() + 14);
+        date.setUTCDate(date.getUTCDate() + 14);
     } else if (occurence === "fourth") {
-        date.setDate(date.getDate() + 21);
+        date.setUTCDate(date.getUTCDate() + 21);
     } else if (occurence === "last") {
         // Keep moving forward by weeks until we'd leave the month
         while (true) {
             let nextWeek = new Date(date);
-            nextWeek.setDate(nextWeek.getDate() + 7);
+            nextWeek.setUTCDate(nextWeek.getUTCDate() + 7);
             // If next week would be in a different month, stop
-            if (nextWeek.getMonth() !== monthNumber) {
+            if (nextWeek.getUTCMonth() !== monthNumber) {
                 break;
             }
             date = nextWeek;
