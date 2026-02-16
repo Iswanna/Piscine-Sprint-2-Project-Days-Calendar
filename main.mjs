@@ -1,4 +1,5 @@
-import { monthNames, getMonthMetadata } from "./calendar-logic.mjs";
+import { getMonthMetadata } from "./calendar-logic.mjs";
+import { getMonthName } from "./common.mjs";
 
 const grid = document.getElementById("calendar-grid");
 const template = document.getElementById("day-template");
@@ -16,7 +17,7 @@ function renderCalendar(year, month) {
   const numberOfDays = data.numberOfDays;
 
   // 3. Update UI Title
-  displayTitle.textContent = `${monthNames[month]} ${year}`;
+  displayTitle.textContent = `${getMonthName(month)} ${year}`;
 
   // 4. Draw Padding Boxes
   for (let i = 0; i < firstDayIndex; i++) {

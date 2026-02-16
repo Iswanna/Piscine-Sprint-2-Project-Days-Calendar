@@ -1,18 +1,3 @@
-export const monthNames = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-
 /**
  * Calculates the first day of the month and how many days it has.
  */
