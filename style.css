@@ -23,3 +23,15 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+
+.day-number {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.day-events {
+  font-size: 0.8rem;
+  color: #0056b3; 
+  line-height: 1.2;
+}
