@@ -5,5 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Days Calendar</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <!-- This shows the month and year currently being viewed -->
+      <h1 id="current-display">Month Year</h1>
+
+      <div class="controls">
+        <!-- Navigation buttons -->
+        <button id="prev-btn">Previous Month</button>
+        <button id="next-btn">Next Month</button>
+
+        <!-- Jump-to selectors -->
+        <div class="jump-to">
+          <label for="month-select">Jump to:</label>
+          <select id="month-select">
+            <option value="0">January</option>
+            <option value="1">February</option>
+            <option value="2">March</option>
+            <option value="3">April</option>
+            <option value="4">May</option>
+            <option value="5">June</option>
+            <option value="6">July</option>
+            <option value="7">August</option>
+            <option value="8">September</option>
+            <option value="9">October</option>
+            <option value="10">November</option>
+            <option value="11">December</option>
+          </select>
+          <input
+            type="number"
+            id="year-input"
+            value="2024"
+            min="1900"
+            max="2100"
+          />
+          <button id="go-btn">Go</button>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
