@@ -1,11 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Days Calendar</title>
-</head>
-<body>
-   
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- This shows the month and year currently being viewed -->
+      <h1 id="current-display">Month Year</h1>
+
+      <div class="controls">
+        <!-- Navigation buttons -->
+        <button id="prev-btn">Previous Month</button>
+        <button id="next-btn">Next Month</button>
+
+        <!-- Jump-to selectors -->
+        <div class="jump-to">
+          <label for="month-select">Jump to:</label>
+          <select id="month-select">
+            <option value="0">January</option>
+            <option value="1">February</option>
+            <option value="2">March</option>
+            <option value="3">April</option>
+            <option value="4">May</option>
+            <option value="5">June</option>
+            <option value="6">July</option>
+            <option value="7">August</option>
+            <option value="8">September</option>
+            <option value="9">October</option>
+            <option value="10">November</option>
+            <option value="11">December</option>
+          </select>
+          <input
+            type="number"
+            id="year-input"
+            value="2024"
+            min="1900"
+            max="2100"
+          />
+          <button id="go-btn">Go</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="calendar-container">
+        <!-- Day of the week headers (Sundays First) -->
+        <div class="day-headers">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+
+        <!-- This is the empty grid that JavaScript will fill -->
+        <div id="calendar-grid"></div>
+      </div>
+    </main>
+
+    <!-- THE TEMPLATE: This is the blueprint for a single day box -->
+    <template id="day-template">
+      <div class="day-box">
+        <span class="day-number"></span>
+        <div class="day-events">
+          <!-- Special events from JSON will be injected here -->
+        </div>
+      </div>
+    </template>
+
+    <!-- type="module" allows you to import/export code between files -->
+    <script type="module" src="./main.mjs"></script>
+  </body>
 </html>

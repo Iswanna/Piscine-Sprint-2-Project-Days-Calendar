@@ -1,0 +1,37 @@
+#calendar-grid,
+.day-headers {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* Creates 7 equal columns */
+  max-width: 1000px;
+  margin: 0 auto; /* Centers the calendar on the page */
+}
+
+.day-headers div {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f0f0f0; /* Light gray background */
+  border: 1px solid #ddd; /* Light borders */
+}
+
+.day-box {
+  border: 1px solid #ccc;
+  min-height: 120px; /* This ensures they are rectangles, not squares */
+  padding: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.day-number {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.day-events {
+  font-size: 0.8rem;
+  color: #0056b3;
+  line-height: 1.2;
+}
