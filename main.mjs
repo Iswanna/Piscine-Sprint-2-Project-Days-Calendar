@@ -55,21 +55,25 @@ function renderCalendar(year, month) {
   // 3. Update UI Title
   displayTitle.textContent = `${getMonthName(month)} ${year}`;
 
-  // 4. Draw Padding Boxes
+  // 4. Sync the jump-to selectors with current view
+  monthSelect.value = month;
+  yearInput.value = year;
+
+  // 5. Draw Padding Boxes
   for (let i = 0; i < firstDayIndex; i++) {
     const emptyBox = document.createElement("div");
     emptyBox.classList.add("day-box");
     grid.appendChild(emptyBox);
   }
 
-  // 5. Draw Actual Day Boxes
+  // 6. Draw Actual Day Boxes
   for (let day = 1; day <= numberOfDays; day++) {
     const clone = template.content.cloneNode(true);
     clone.querySelector(".day-number").textContent = day;
     grid.appendChild(clone);
   }
 
-  // 6. ADD PADDING AT THE END:
+  // 7. ADD PADDING AT THE END:
   // We want the grid to always finish a full row (7 columns)
   // We keep adding empty boxes until the total count is a multiple of 7
   while (grid.children.length % 7 !== 0) {
