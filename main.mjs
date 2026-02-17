@@ -1,6 +1,9 @@
 import { getMonthMetadata } from "./calendar-logic.mjs";
 import { getMonthName } from "./common.mjs";
 
+let currentViewYear = new Date().getFullYear();
+let currentViewMonth = new Date().getMonth();
+
 const grid = document.getElementById("calendar-grid");
 const template = document.getElementById("day-template");
 const displayTitle = document.getElementById("current-display");
