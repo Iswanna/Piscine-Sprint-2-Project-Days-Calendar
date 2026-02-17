@@ -8,6 +8,28 @@ const grid = document.getElementById("calendar-grid");
 const template = document.getElementById("day-template");
 const displayTitle = document.getElementById("current-display");
 
+// Navigation buttons - handle month switching
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+
+nextBtn.addEventListener('click', () => {
+    currentViewMonth++;
+    if (currentViewMonth > 11) {
+        currentViewMonth = 0;
+        currentViewYear++;
+    }
+    renderCalendar(currentViewYear, currentViewMonth);
+});
+
+prevBtn.addEventListener('click', () => {
+    currentViewMonth--;
+    if (currentViewMonth < 0) {
+        currentViewMonth = 11;
+        currentViewYear--;
+    }
+    renderCalendar(currentViewYear, currentViewMonth);
+});
+
 function renderCalendar(year, month) {
   // 1. Clear UI
   grid.innerHTML = "";
