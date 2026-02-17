@@ -30,6 +30,17 @@ prevBtn.addEventListener('click', () => {
     renderCalendar(currentViewYear, currentViewMonth);
 });
 
+// Jump-to selectors - handle month/year selection
+const monthSelect = document.getElementById('month-select');
+const yearInput = document.getElementById('year-input');
+const goBtn = document.getElementById('go-btn');
+
+goBtn.addEventListener('click', () => {
+    currentViewMonth = parseInt(monthSelect.value);
+    currentViewYear = parseInt(yearInput.value);
+    renderCalendar(currentViewYear, currentViewMonth);
+});
+
 function renderCalendar(year, month) {
   // 1. Clear UI
   grid.innerHTML = "";
