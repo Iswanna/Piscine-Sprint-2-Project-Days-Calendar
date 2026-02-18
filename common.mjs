@@ -1,3 +1,5 @@
+import daysData from "./days.json" with { type: "json" };
+
 // This file contains shared functions used by both the web page and the iCal generator
 
 /**
@@ -109,12 +111,29 @@ export function getMonthName(monthNumber) {
 
 /**
  * Find which commemorative days occur on a specific date
- * @param {Array} daysData - Array of commemorative days from JSON
  * @param {number} year - The year
  * @param {number} month - The month (0-11)
  * @param {number} day - The day of the month
  * @returns {Array} Array of commemorative days that occur on this date
  */
+export function getCommemorativeDaysForDate(year, month, day) {
+  const results = [];
+  
+  for (const dayInfo of daysData) {
+    // Calculate when this day occurs in the given year
+    const date = calculateDayDate(year, dayInfo.monthName, dayInfo.dayName, dayInfo.occurrence);
+    
+    // Check if it matches our target date
+    if (date.getUTCFullYear() === year && 
+        date.getUTCMonth() === month && 
+        date.getUTCDate() === day) {
+      results.push(dayInfo);
+    }
+  }
+  
+  return results;
+}
+
 /**
  * Fetch description text from a URL
  * @param {string} url - The URL to fetch from

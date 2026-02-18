@@ -1,5 +1,6 @@
 import { getMonthMetadata } from "./calendar-logic.mjs";
 import { getMonthName } from "./common.mjs";
+import { getCommemorativeDaysForDate, fetchDescription } from './common.mjs';
 
 let currentViewYear = new Date().getFullYear();
 let currentViewMonth = new Date().getMonth();
@@ -8,7 +9,6 @@ const grid = document.getElementById("calendar-grid");
 const template = document.getElementById("day-template");
 const displayTitle = document.getElementById("current-display");
 
-// Navigation buttons - handle month switching
 const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
 
@@ -30,7 +30,6 @@ prevBtn.addEventListener('click', () => {
     renderCalendar(currentViewYear, currentViewMonth);
 });
 
-// Jump-to selectors - handle month/year selection
 const monthSelect = document.getElementById('month-select');
 const yearInput = document.getElementById('year-input');
 const goBtn = document.getElementById('go-btn');
@@ -42,40 +41,49 @@ goBtn.addEventListener('click', () => {
 });
 
 function renderCalendar(year, month) {
-  // 1. Clear UI
   grid.innerHTML = "";
-
-  // 2a. Get the data "box"
   const data = getMonthMetadata(year, month);
-
-  // 2b. Take the pieces out of the box one by one
   const firstDayIndex = data.firstDayIndex;
   const numberOfDays = data.numberOfDays;
 
-  // 3. Update UI Title
   displayTitle.textContent = `${getMonthName(month)} ${year}`;
-
-  // 4. Sync the jump-to selectors with current view
   monthSelect.value = month;
   yearInput.value = year;
 
-  // 5. Draw Padding Boxes
+  // 1. Draw Padding Boxes
   for (let i = 0; i < firstDayIndex; i++) {
     const emptyBox = document.createElement("div");
     emptyBox.classList.add("day-box");
     grid.appendChild(emptyBox);
   }
 
-  // 6. Draw Actual Day Boxes
+  // 2. Draw Actual Day Boxes
   for (let day = 1; day <= numberOfDays; day++) {
     const clone = template.content.cloneNode(true);
     clone.querySelector(".day-number").textContent = day;
+    
+    const commemorativeDays = getCommemorativeDaysForDate(year, month, day);
+    const eventsDiv = clone.querySelector(".day-events");
+    
+    commemorativeDays.forEach(dayInfo => {
+      const eventSpan = document.createElement('span');
+      eventSpan.textContent = dayInfo.name;
+      eventSpan.style.display = 'block';
+      eventSpan.style.cursor = 'pointer';
+      eventSpan.style.textDecoration = 'underline';
+      eventSpan.style.color = 'blue';
+      
+      eventSpan.addEventListener('click', async () => {
+        const description = await fetchDescription(dayInfo.descriptionURL);
+        alert(`${dayInfo.name}\n\n${description}`);
+      });
+      
+      eventsDiv.appendChild(eventSpan);
+    });
+    
     grid.appendChild(clone);
   }
 
-  // 7. ADD PADDING AT THE END:
-  // We want the grid to always finish a full row (7 columns)
-  // We keep adding empty boxes until the total count is a multiple of 7
   while (grid.children.length % 7 !== 0) {
     const emptyBox = document.createElement("div");
     emptyBox.classList.add("day-box");
@@ -83,6 +91,5 @@ function renderCalendar(year, month) {
   }
 }
 
-// Initial Load
 const today = new Date();
 renderCalendar(today.getFullYear(), today.getMonth());
