@@ -26,7 +26,7 @@ async function generateICalFile() {
         // For each commemorative day
         for (const dayInfo of daysData) {
             // Calculate the date this day occurs in this year
-            const date = calculateDayDate(year, dayInfo.monthName, dayInfo.dayName, dayInfo.occurence);
+            const date = calculateDayDate(year, dayInfo.monthName, dayInfo.dayName, dayInfo.occurrence);
             
             // Fetch the description
             console.log(`  Fetching description for ${dayInfo.name}...`);
