@@ -46,7 +46,7 @@ To create the `.ics` file:
 1.  Open your terminal in the project root.
 2.  Run the command:
     ```bash
-    node generate-ical.mjs
+    npm run generate-ical
     ```
 3.  A file named `days.ics` will appear in your folder.
 
@@ -56,7 +56,7 @@ To verify the math logic:
 
 1.  Run the following command in your terminal:
     ```bash
-    node common.test.mjs
+    npm test
     ```
 
 ---
