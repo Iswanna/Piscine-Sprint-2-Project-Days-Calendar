@@ -1,0 +1,390 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Days Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:Ada-Lovelace-Day-2020@dayscalendar.com
+DTSTAMP:20201006
+DTSTART;VALUE=DATE:20201006
+SUMMARY:Ada Lovelace Day
+DESCRIPTION:Ada Lovelace was a mathematician who made contributions to the field of computing in its very early days. On Ada Lovelace Day we celebrate and raise awareness of the contributions of women to STEM fields.\n
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Binturong-Day-2020@dayscalendar.com
+DTSTAMP:20200502
+DTSTART;VALUE=DATE:20200502
+SUMMARY:International Binturong Day
+DESCRIPTION:Binturongs are really cute\, and smell of popcorn.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Vulture-Awareness-Day-2020@dayscalendar.com
+DTSTAMP:20200905
+DTSTART;VALUE=DATE:20200905
+SUMMARY:International Vulture Awareness Day
+DESCRIPTION:Vultures are a much maligned species. They provide vital services to the ecosystem\, and without them the world would be a much worse place.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Red-Panda-Day-2020@dayscalendar.com
+DTSTAMP:20200905
+DTSTART;VALUE=DATE:20200905
+SUMMARY:International Red Panda Day
+DESCRIPTION:Red pandas are an endangered species. They happen to be really cute\, but that's not the only reason we should help them to thrive!
+END:VEVENT
+BEGIN:VEVENT
+UID:World-Lemur-Day-2020@dayscalendar.com
+DTSTAMP:20201002
+DTSTART;VALUE=DATE:20201002
+SUMMARY:World Lemur Day
+DESCRIPTION:Lemurs are excellent. Did you know that the most likely scientific theory as to how they got to Madagascar is that they rafted there from mainland Africa?
+END:VEVENT
+BEGIN:VEVENT
+UID:Ada-Lovelace-Day-2021@dayscalendar.com
+DTSTAMP:20211005
+DTSTART;VALUE=DATE:20211005
+SUMMARY:Ada Lovelace Day
+DESCRIPTION:Ada Lovelace was a mathematician who made contributions to the field of computing in its very early days. On Ada Lovelace Day we celebrate and raise awareness of the contributions of women to STEM fields.\n
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Binturong-Day-2021@dayscalendar.com
+DTSTAMP:20210501
+DTSTART;VALUE=DATE:20210501
+SUMMARY:International Binturong Day
+DESCRIPTION:Binturongs are really cute\, and smell of popcorn.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Vulture-Awareness-Day-2021@dayscalendar.com
+DTSTAMP:20210904
+DTSTART;VALUE=DATE:20210904
+SUMMARY:International Vulture Awareness Day
+DESCRIPTION:Vultures are a much maligned species. They provide vital services to the ecosystem\, and without them the world would be a much worse place.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Red-Panda-Day-2021@dayscalendar.com
+DTSTAMP:20210904
+DTSTART;VALUE=DATE:20210904
+SUMMARY:International Red Panda Day
+DESCRIPTION:Red pandas are an endangered species. They happen to be really cute\, but that's not the only reason we should help them to thrive!
+END:VEVENT
+BEGIN:VEVENT
+UID:World-Lemur-Day-2021@dayscalendar.com
+DTSTAMP:20211001
+DTSTART;VALUE=DATE:20211001
+SUMMARY:World Lemur Day
+DESCRIPTION:Lemurs are excellent. Did you know that the most likely scientific theory as to how they got to Madagascar is that they rafted there from mainland Africa?
+END:VEVENT
+BEGIN:VEVENT
+UID:Ada-Lovelace-Day-2022@dayscalendar.com
+DTSTAMP:20221004
+DTSTART;VALUE=DATE:20221004
+SUMMARY:Ada Lovelace Day
+DESCRIPTION:Ada Lovelace was a mathematician who made contributions to the field of computing in its very early days. On Ada Lovelace Day we celebrate and raise awareness of the contributions of women to STEM fields.\n
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Binturong-Day-2022@dayscalendar.com
+DTSTAMP:20220507
+DTSTART;VALUE=DATE:20220507
+SUMMARY:International Binturong Day
+DESCRIPTION:Binturongs are really cute\, and smell of popcorn.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Vulture-Awareness-Day-2022@dayscalendar.com
+DTSTAMP:20220903
+DTSTART;VALUE=DATE:20220903
+SUMMARY:International Vulture Awareness Day
+DESCRIPTION:Vultures are a much maligned species. They provide vital services to the ecosystem\, and without them the world would be a much worse place.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Red-Panda-Day-2022@dayscalendar.com
+DTSTAMP:20220903
+DTSTART;VALUE=DATE:20220903
+SUMMARY:International Red Panda Day
+DESCRIPTION:Red pandas are an endangered species. They happen to be really cute\, but that's not the only reason we should help them to thrive!
+END:VEVENT
+BEGIN:VEVENT
+UID:World-Lemur-Day-2022@dayscalendar.com
+DTSTAMP:20221007
+DTSTART;VALUE=DATE:20221007
+SUMMARY:World Lemur Day
+DESCRIPTION:Lemurs are excellent. Did you know that the most likely scientific theory as to how they got to Madagascar is that they rafted there from mainland Africa?
+END:VEVENT
+BEGIN:VEVENT
+UID:Ada-Lovelace-Day-2023@dayscalendar.com
+DTSTAMP:20231003
+DTSTART;VALUE=DATE:20231003
+SUMMARY:Ada Lovelace Day
+DESCRIPTION:Ada Lovelace was a mathematician who made contributions to the field of computing in its very early days. On Ada Lovelace Day we celebrate and raise awareness of the contributions of women to STEM fields.\n
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Binturong-Day-2023@dayscalendar.com
+DTSTAMP:20230506
+DTSTART;VALUE=DATE:20230506
+SUMMARY:International Binturong Day
+DESCRIPTION:Binturongs are really cute\, and smell of popcorn.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Vulture-Awareness-Day-2023@dayscalendar.com
+DTSTAMP:20230902
+DTSTART;VALUE=DATE:20230902
+SUMMARY:International Vulture Awareness Day
+DESCRIPTION:Vultures are a much maligned species. They provide vital services to the ecosystem\, and without them the world would be a much worse place.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Red-Panda-Day-2023@dayscalendar.com
+DTSTAMP:20230902
+DTSTART;VALUE=DATE:20230902
+SUMMARY:International Red Panda Day
+DESCRIPTION:Red pandas are an endangered species. They happen to be really cute\, but that's not the only reason we should help them to thrive!
+END:VEVENT
+BEGIN:VEVENT
+UID:World-Lemur-Day-2023@dayscalendar.com
+DTSTAMP:20231006
+DTSTART;VALUE=DATE:20231006
+SUMMARY:World Lemur Day
+DESCRIPTION:Lemurs are excellent. Did you know that the most likely scientific theory as to how they got to Madagascar is that they rafted there from mainland Africa?
+END:VEVENT
+BEGIN:VEVENT
+UID:Ada-Lovelace-Day-2024@dayscalendar.com
+DTSTAMP:20241001
+DTSTART;VALUE=DATE:20241001
+SUMMARY:Ada Lovelace Day
+DESCRIPTION:Ada Lovelace was a mathematician who made contributions to the field of computing in its very early days. On Ada Lovelace Day we celebrate and raise awareness of the contributions of women to STEM fields.\n
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Binturong-Day-2024@dayscalendar.com
+DTSTAMP:20240504
+DTSTART;VALUE=DATE:20240504
+SUMMARY:International Binturong Day
+DESCRIPTION:Binturongs are really cute\, and smell of popcorn.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Vulture-Awareness-Day-2024@dayscalendar.com
+DTSTAMP:20240907
+DTSTART;VALUE=DATE:20240907
+SUMMARY:International Vulture Awareness Day
+DESCRIPTION:Vultures are a much maligned species. They provide vital services to the ecosystem\, and without them the world would be a much worse place.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Red-Panda-Day-2024@dayscalendar.com
+DTSTAMP:20240907
+DTSTART;VALUE=DATE:20240907
+SUMMARY:International Red Panda Day
+DESCRIPTION:Red pandas are an endangered species. They happen to be really cute\, but that's not the only reason we should help them to thrive!
+END:VEVENT
+BEGIN:VEVENT
+UID:World-Lemur-Day-2024@dayscalendar.com
+DTSTAMP:20241004
+DTSTART;VALUE=DATE:20241004
+SUMMARY:World Lemur Day
+DESCRIPTION:Lemurs are excellent. Did you know that the most likely scientific theory as to how they got to Madagascar is that they rafted there from mainland Africa?
+END:VEVENT
+BEGIN:VEVENT
+UID:Ada-Lovelace-Day-2025@dayscalendar.com
+DTSTAMP:20251007
+DTSTART;VALUE=DATE:20251007
+SUMMARY:Ada Lovelace Day
+DESCRIPTION:Ada Lovelace was a mathematician who made contributions to the field of computing in its very early days. On Ada Lovelace Day we celebrate and raise awareness of the contributions of women to STEM fields.\n
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Binturong-Day-2025@dayscalendar.com
+DTSTAMP:20250503
+DTSTART;VALUE=DATE:20250503
+SUMMARY:International Binturong Day
+DESCRIPTION:Binturongs are really cute\, and smell of popcorn.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Vulture-Awareness-Day-2025@dayscalendar.com
+DTSTAMP:20250906
+DTSTART;VALUE=DATE:20250906
+SUMMARY:International Vulture Awareness Day
+DESCRIPTION:Vultures are a much maligned species. They provide vital services to the ecosystem\, and without them the world would be a much worse place.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Red-Panda-Day-2025@dayscalendar.com
+DTSTAMP:20250906
+DTSTART;VALUE=DATE:20250906
+SUMMARY:International Red Panda Day
+DESCRIPTION:Red pandas are an endangered species. They happen to be really cute\, but that's not the only reason we should help them to thrive!
+END:VEVENT
+BEGIN:VEVENT
+UID:World-Lemur-Day-2025@dayscalendar.com
+DTSTAMP:20251003
+DTSTART;VALUE=DATE:20251003
+SUMMARY:World Lemur Day
+DESCRIPTION:Lemurs are excellent. Did you know that the most likely scientific theory as to how they got to Madagascar is that they rafted there from mainland Africa?
+END:VEVENT
+BEGIN:VEVENT
+UID:Ada-Lovelace-Day-2026@dayscalendar.com
+DTSTAMP:20261006
+DTSTART;VALUE=DATE:20261006
+SUMMARY:Ada Lovelace Day
+DESCRIPTION:Ada Lovelace was a mathematician who made contributions to the field of computing in its very early days. On Ada Lovelace Day we celebrate and raise awareness of the contributions of women to STEM fields.\n
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Binturong-Day-2026@dayscalendar.com
+DTSTAMP:20260502
+DTSTART;VALUE=DATE:20260502
+SUMMARY:International Binturong Day
+DESCRIPTION:Binturongs are really cute\, and smell of popcorn.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Vulture-Awareness-Day-2026@dayscalendar.com
+DTSTAMP:20260905
+DTSTART;VALUE=DATE:20260905
+SUMMARY:International Vulture Awareness Day
+DESCRIPTION:Vultures are a much maligned species. They provide vital services to the ecosystem\, and without them the world would be a much worse place.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Red-Panda-Day-2026@dayscalendar.com
+DTSTAMP:20260905
+DTSTART;VALUE=DATE:20260905
+SUMMARY:International Red Panda Day
+DESCRIPTION:Red pandas are an endangered species. They happen to be really cute\, but that's not the only reason we should help them to thrive!
+END:VEVENT
+BEGIN:VEVENT
+UID:World-Lemur-Day-2026@dayscalendar.com
+DTSTAMP:20261002
+DTSTART;VALUE=DATE:20261002
+SUMMARY:World Lemur Day
+DESCRIPTION:Lemurs are excellent. Did you know that the most likely scientific theory as to how they got to Madagascar is that they rafted there from mainland Africa?
+END:VEVENT
+BEGIN:VEVENT
+UID:Ada-Lovelace-Day-2027@dayscalendar.com
+DTSTAMP:20271005
+DTSTART;VALUE=DATE:20271005
+SUMMARY:Ada Lovelace Day
+DESCRIPTION:Ada Lovelace was a mathematician who made contributions to the field of computing in its very early days. On Ada Lovelace Day we celebrate and raise awareness of the contributions of women to STEM fields.\n
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Binturong-Day-2027@dayscalendar.com
+DTSTAMP:20270501
+DTSTART;VALUE=DATE:20270501
+SUMMARY:International Binturong Day
+DESCRIPTION:Binturongs are really cute\, and smell of popcorn.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Vulture-Awareness-Day-2027@dayscalendar.com
+DTSTAMP:20270904
+DTSTART;VALUE=DATE:20270904
+SUMMARY:International Vulture Awareness Day
+DESCRIPTION:Vultures are a much maligned species. They provide vital services to the ecosystem\, and without them the world would be a much worse place.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Red-Panda-Day-2027@dayscalendar.com
+DTSTAMP:20270904
+DTSTART;VALUE=DATE:20270904
+SUMMARY:International Red Panda Day
+DESCRIPTION:Red pandas are an endangered species. They happen to be really cute\, but that's not the only reason we should help them to thrive!
+END:VEVENT
+BEGIN:VEVENT
+UID:World-Lemur-Day-2027@dayscalendar.com
+DTSTAMP:20271001
+DTSTART;VALUE=DATE:20271001
+SUMMARY:World Lemur Day
+DESCRIPTION:Lemurs are excellent. Did you know that the most likely scientific theory as to how they got to Madagascar is that they rafted there from mainland Africa?
+END:VEVENT
+BEGIN:VEVENT
+UID:Ada-Lovelace-Day-2028@dayscalendar.com
+DTSTAMP:20281003
+DTSTART;VALUE=DATE:20281003
+SUMMARY:Ada Lovelace Day
+DESCRIPTION:Ada Lovelace was a mathematician who made contributions to the field of computing in its very early days. On Ada Lovelace Day we celebrate and raise awareness of the contributions of women to STEM fields.\n
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Binturong-Day-2028@dayscalendar.com
+DTSTAMP:20280506
+DTSTART;VALUE=DATE:20280506
+SUMMARY:International Binturong Day
+DESCRIPTION:Binturongs are really cute\, and smell of popcorn.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Vulture-Awareness-Day-2028@dayscalendar.com
+DTSTAMP:20280902
+DTSTART;VALUE=DATE:20280902
+SUMMARY:International Vulture Awareness Day
+DESCRIPTION:Vultures are a much maligned species. They provide vital services to the ecosystem\, and without them the world would be a much worse place.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Red-Panda-Day-2028@dayscalendar.com
+DTSTAMP:20280902
+DTSTART;VALUE=DATE:20280902
+SUMMARY:International Red Panda Day
+DESCRIPTION:Red pandas are an endangered species. They happen to be really cute\, but that's not the only reason we should help them to thrive!
+END:VEVENT
+BEGIN:VEVENT
+UID:World-Lemur-Day-2028@dayscalendar.com
+DTSTAMP:20281006
+DTSTART;VALUE=DATE:20281006
+SUMMARY:World Lemur Day
+DESCRIPTION:Lemurs are excellent. Did you know that the most likely scientific theory as to how they got to Madagascar is that they rafted there from mainland Africa?
+END:VEVENT
+BEGIN:VEVENT
+UID:Ada-Lovelace-Day-2029@dayscalendar.com
+DTSTAMP:20291002
+DTSTART;VALUE=DATE:20291002
+SUMMARY:Ada Lovelace Day
+DESCRIPTION:Ada Lovelace was a mathematician who made contributions to the field of computing in its very early days. On Ada Lovelace Day we celebrate and raise awareness of the contributions of women to STEM fields.\n
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Binturong-Day-2029@dayscalendar.com
+DTSTAMP:20290505
+DTSTART;VALUE=DATE:20290505
+SUMMARY:International Binturong Day
+DESCRIPTION:Binturongs are really cute\, and smell of popcorn.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Vulture-Awareness-Day-2029@dayscalendar.com
+DTSTAMP:20290901
+DTSTART;VALUE=DATE:20290901
+SUMMARY:International Vulture Awareness Day
+DESCRIPTION:Vultures are a much maligned species. They provide vital services to the ecosystem\, and without them the world would be a much worse place.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Red-Panda-Day-2029@dayscalendar.com
+DTSTAMP:20290901
+DTSTART;VALUE=DATE:20290901
+SUMMARY:International Red Panda Day
+DESCRIPTION:Red pandas are an endangered species. They happen to be really cute\, but that's not the only reason we should help them to thrive!
+END:VEVENT
+BEGIN:VEVENT
+UID:World-Lemur-Day-2029@dayscalendar.com
+DTSTAMP:20291005
+DTSTART;VALUE=DATE:20291005
+SUMMARY:World Lemur Day
+DESCRIPTION:Lemurs are excellent. Did you know that the most likely scientific theory as to how they got to Madagascar is that they rafted there from mainland Africa?
+END:VEVENT
+BEGIN:VEVENT
+UID:Ada-Lovelace-Day-2030@dayscalendar.com
+DTSTAMP:20301001
+DTSTART;VALUE=DATE:20301001
+SUMMARY:Ada Lovelace Day
+DESCRIPTION:Ada Lovelace was a mathematician who made contributions to the field of computing in its very early days. On Ada Lovelace Day we celebrate and raise awareness of the contributions of women to STEM fields.\n
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Binturong-Day-2030@dayscalendar.com
+DTSTAMP:20300504
+DTSTART;VALUE=DATE:20300504
+SUMMARY:International Binturong Day
+DESCRIPTION:Binturongs are really cute\, and smell of popcorn.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Vulture-Awareness-Day-2030@dayscalendar.com
+DTSTAMP:20300907
+DTSTART;VALUE=DATE:20300907
+SUMMARY:International Vulture Awareness Day
+DESCRIPTION:Vultures are a much maligned species. They provide vital services to the ecosystem\, and without them the world would be a much worse place.
+END:VEVENT
+BEGIN:VEVENT
+UID:International-Red-Panda-Day-2030@dayscalendar.com
+DTSTAMP:20300907
+DTSTART;VALUE=DATE:20300907
+SUMMARY:International Red Panda Day
+DESCRIPTION:Red pandas are an endangered species. They happen to be really cute\, but that's not the only reason we should help them to thrive!
+END:VEVENT
+BEGIN:VEVENT
+UID:World-Lemur-Day-2030@dayscalendar.com
+DTSTAMP:20301004
+DTSTART;VALUE=DATE:20301004
+SUMMARY:World Lemur Day
+DESCRIPTION:Lemurs are excellent. Did you know that the most likely scientific theory as to how they got to Madagascar is that they rafted there from mainland Africa?
+END:VEVENT
+END:VCALENDAR
