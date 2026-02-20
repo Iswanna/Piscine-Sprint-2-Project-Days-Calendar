@@ -118,19 +118,26 @@ export function getMonthName(monthNumber) {
  */
 export function getCommemorativeDaysForDate(year, month, day) {
   const results = [];
-  
+
   for (const dayInfo of daysData) {
     // Calculate when this day occurs in the given year
-    const date = calculateDayDate(year, dayInfo.monthName, dayInfo.dayName, dayInfo.occurrence);
-    
+    const date = calculateDayDate(
+      year,
+      dayInfo.monthName,
+      dayInfo.dayName,
+      dayInfo.occurrence,
+    );
+
     // Check if it matches our target date
-    if (date.getUTCFullYear() === year && 
-        date.getUTCMonth() === month && 
-        date.getUTCDate() === day) {
+    if (
+      date.getUTCFullYear() === year &&
+      date.getUTCMonth() === month &&
+      date.getUTCDate() === day
+    ) {
       results.push(dayInfo);
     }
   }
-  
+
   return results;
 }
 

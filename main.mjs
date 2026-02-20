@@ -1,6 +1,6 @@
 import { getMonthMetadata } from "./calendar-logic.mjs";
 import { getMonthName } from "./common.mjs";
-import { getCommemorativeDaysForDate, fetchDescription } from './common.mjs';
+import { getCommemorativeDaysForDate, fetchDescription } from "./common.mjs";
 
 let currentViewYear = new Date().getFullYear();
 let currentViewMonth = new Date().getMonth();
@@ -9,35 +9,35 @@ const grid = document.getElementById("calendar-grid");
 const template = document.getElementById("day-template");
 const displayTitle = document.getElementById("current-display");
 
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
+const prevBtn = document.getElementById("prev-btn");
+const nextBtn = document.getElementById("next-btn");
 
-nextBtn.addEventListener('click', () => {
-    currentViewMonth++;
-    if (currentViewMonth > 11) {
-        currentViewMonth = 0;
-        currentViewYear++;
-    }
-    renderCalendar(currentViewYear, currentViewMonth);
+nextBtn.addEventListener("click", () => {
+  currentViewMonth++;
+  if (currentViewMonth > 11) {
+    currentViewMonth = 0;
+    currentViewYear++;
+  }
+  renderCalendar(currentViewYear, currentViewMonth);
 });
 
-prevBtn.addEventListener('click', () => {
-    currentViewMonth--;
-    if (currentViewMonth < 0) {
-        currentViewMonth = 11;
-        currentViewYear--;
-    }
-    renderCalendar(currentViewYear, currentViewMonth);
+prevBtn.addEventListener("click", () => {
+  currentViewMonth--;
+  if (currentViewMonth < 0) {
+    currentViewMonth = 11;
+    currentViewYear--;
+  }
+  renderCalendar(currentViewYear, currentViewMonth);
 });
 
-const monthSelect = document.getElementById('month-select');
-const yearInput = document.getElementById('year-input');
-const goBtn = document.getElementById('go-btn');
+const monthSelect = document.getElementById("month-select");
+const yearInput = document.getElementById("year-input");
+const goBtn = document.getElementById("go-btn");
 
-goBtn.addEventListener('click', () => {
-    currentViewMonth = parseInt(monthSelect.value);
-    currentViewYear = parseInt(yearInput.value);
-    renderCalendar(currentViewYear, currentViewMonth);
+goBtn.addEventListener("click", () => {
+  currentViewMonth = parseInt(monthSelect.value);
+  currentViewYear = parseInt(yearInput.value);
+  renderCalendar(currentViewYear, currentViewMonth);
 });
 
 function renderCalendar(year, month) {
@@ -61,26 +61,26 @@ function renderCalendar(year, month) {
   for (let day = 1; day <= numberOfDays; day++) {
     const clone = template.content.cloneNode(true);
     clone.querySelector(".day-number").textContent = day;
-    
+
     const commemorativeDays = getCommemorativeDaysForDate(year, month, day);
     const eventsDiv = clone.querySelector(".day-events");
-    
-    commemorativeDays.forEach(dayInfo => {
-      const eventSpan = document.createElement('span');
+
+    commemorativeDays.forEach((dayInfo) => {
+      const eventSpan = document.createElement("span");
       eventSpan.textContent = dayInfo.name;
-      eventSpan.style.display = 'block';
-      eventSpan.style.cursor = 'pointer';
-      eventSpan.style.textDecoration = 'underline';
-      eventSpan.style.color = 'blue';
-      
-      eventSpan.addEventListener('click', async () => {
+      eventSpan.style.display = "block";
+      eventSpan.style.cursor = "pointer";
+      eventSpan.style.textDecoration = "underline";
+      eventSpan.style.color = "blue";
+
+      eventSpan.addEventListener("click", async () => {
         const description = await fetchDescription(dayInfo.descriptionURL);
         alert(`${dayInfo.name}\n\n${description}`);
       });
-      
+
       eventsDiv.appendChild(eventSpan);
     });
-    
+
     grid.appendChild(clone);
   }
 
