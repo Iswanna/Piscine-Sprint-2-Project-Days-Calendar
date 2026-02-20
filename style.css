@@ -37,12 +37,12 @@
 }
 
 /* Make buttons and inputs bigger and add space between them */
-button, select, input {
-    padding: 5px;      /* Makes the clickable area larger */
-    margin: 8px;        /* Pushes them away from each other */
-    min-height: 48px;   /* This is the standard size for touch safety */
-    min-width: 48px;
-    font-size: 1rem;    /* Makes text easier to read */
+button,
+select,
+input {
+  padding: 5px; /* Makes the clickable area larger */
+  margin: 8px; /* Pushes them away from each other */
+  min-height: 48px; /* This is the standard size for touch safety */
+  min-width: 48px;
+  font-size: 1rem; /* Makes text easier to read */
 }
-
-
