@@ -1,0 +1,10 @@
+{
+  "name": "project-days-calendar",
+  "version": "1.0.0",
+  "description": "A smart calendar for commemorative days",
+  "type": "module",
+  "scripts": {
+    "test": "node common.test.mjs",
+    "generate-ical": "node generate-ical.mjs"
+  }
+}
