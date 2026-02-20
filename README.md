@@ -13,7 +13,7 @@ Instead of hard-coding dates, our app reads "rules" from a JSON file and uses a 
 *   **Smart Holiday Logic:** Automatically calculates dates for holidays (first, second, third, fourth, or last occurrence of a weekday).
 *   **Timezone Safe:** Built using **UTC logic** to ensure dates never "slip" due to Daylight Savings or different time zones.
 *   **Interactive UI:** Click on any holiday name to see a popup with a description fetched from an external URL.
-*   **100% Accessible:** Optimized to hit a perfect **100 score on Lighthouse Accessibility**.
+*   **100% Accessible:** Optimized to hit a perfect **100 score on Lighthouse Accessibility** ![Accessibility Score](./lighthouse-accessibility-score.png)
 
 ---
 
